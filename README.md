@@ -18,7 +18,8 @@ https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input
 - Ensuite on établit une connexion avec la base de données , Notre dataset est caractérisé par sa taille massive . Lorsque nous travaillons avec des ensembles de données aussi importants, il est essentiel de tenir compte de la capacité de notre base de données MongoDB à absorber ces données de manière efficace. Afin d'optimiser le processus d'insertion des données dans MongoDB, nous avons ajusté le paramètre connectTimeoutMS lors de l'établissement de la connexion avec la base de données. En augmentant la durée du délai de connexion à 60 secondes, nous nous assurons que le client MongoDB dispose du temps nécessaire pour établir une connexion stable, même lorsque nous manipulons des quantités massives de données.
   
 - Pour récupére chaque ligne sous forme de documents on transformer le dataframe en dictionnaire.
--  Ensuite on a Créez un connecteur vers une base de données que l'on appellera 'IPSSI' et une collection nommée 'Flights'
+- Ensuite on a Créez un connecteur vers une base de données que l'on appellera 'IPSSI' et une collection nommée 'Flights'
+  
 Listes  des colonnes utiles pour notre probléme ( Après avoir supprimé ce dont on n'a pas besoin et fusionner les colonnes YEAR , MONTH et DAY dans la colonne DATES) 
 
 retrait des des valeurs abérentes ainsi que les NaN et autres valeurs non exploitable(avec le notebook)
