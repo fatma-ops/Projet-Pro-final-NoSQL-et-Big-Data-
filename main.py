@@ -8,3 +8,5 @@ Hello *world!*
 """)
 
 client = MongoClient("mongodb+srv://batman:jesuisbatman@bdd-cours-mongo.qbpym7c.mongodb.net/?retryWrites=true&w=majority")
+
+data = pd.read_csv("flight_dataset.csv")
