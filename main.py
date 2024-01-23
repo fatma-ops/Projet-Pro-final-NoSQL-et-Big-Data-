@@ -7,10 +7,4 @@ st.write("""
 Hello *world!*
 """)
 
-client = MongoClient()
-
-find = client['IPSSI']['crimeUS'].find()
-
-df = pd.DataFrame(find)
-
-st.write(df)
+client = MongoClient("mongodb+srv://batman:jesuisbatman@bdd-cours-mongo.qbpym7c.mongodb.net/?retryWrites=true&w=majority")
