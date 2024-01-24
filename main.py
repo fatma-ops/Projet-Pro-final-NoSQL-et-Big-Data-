@@ -12,7 +12,7 @@ def load_data():
     client = MongoClient(
         "mongodb+srv://batman:jesuisbatman@bdd-cours-mongo.qbpym7c.mongodb.net/?retryWrites=true&w=majority")
     cursor = client['IPSSI']['Flights']
-    data = cursor.find().limit(10000)
+    data = cursor.find().limit(100000)
     df = pd.DataFrame(data)
     return df
 
@@ -38,7 +38,7 @@ def plot_bar_chart(data, x, y, title):
 
 
 # Application Streamlit
-st.title('Analyse des Données de Vols')
+st.title('Analyse des Données de Vols des USA sur l\'Année 2015')
 
 # Choix de l'analyse à afficher
 analysis_option = st.sidebar.selectbox(
