@@ -122,7 +122,6 @@ elif analysis_option == 'Tendances Temporelles':
 elif analysis_option == 'About':
     st.header('Au sujet du projet')
     st.subheader('Objectif', divider='rainbow')
-
     st.markdown("""
 Ce projet manipule les données en utlisant la base de données mongoDB via Atlas , ce projet a pour objectif d'effectuer une analyse détaillée des différentes performances des compagnies aériennes : 
 - Quelles compagnies aériennes sont les plus ponctuelles ?
@@ -133,28 +132,22 @@ Ce projet manipule les données en utlisant la base de données mongoDB via Atla
 - Quel est le nombre total de vols pour chaque aéroport d'origine ?
 - Quel est le nombre total de vols pour chaque aéroport de destination?
 - Quelle est la durée moyenne des vols, et quelle est la distance moyenne parcourue par les avions ?
-- Quel est le nombre de vols enregistrés chaque mois?
-                
-
-
-
-
-donc nous avons choisi la dataset "flights" qui contient des informations relatives aux vols, avec des colonnes décrivant divers aspects de chaque vol ainsi que le csv des compagnies.
-               
-        """)
-st.subheader('Dataset', divider='rainbow')
-st.markdown(""" Lien pour télécharger la dataset : 
+- Quel est le nombre de vols enregistrés chaque mois?   
+donc nous avons choisi la dataset "flights" qui contient des informations relatives aux vols, avec des colonnes décrivant divers aspects de chaque vol ainsi que le csv des compagnies. """)
+    st.subheader('Dataset', divider='rainbow')
+    st.markdown(""" Lien pour télécharger la dataset : 
 (https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input?select=flights.csv)
                
         """)
 
-st.subheader('Code source ', divider='rainbow')
-st.markdown(""" Github : 
+    st.subheader('Code source ', divider='rainbow')
+    st.markdown(""" Github : 
 (https://github.com/fatma-ops/Projet-Pro-final-NoSQL-et-Big-Data-)
                
         """)
 
-st.caption('Mourad SALHI , Enzo DAVAL , Fatma MOKRANI')
+    st.caption('Mourad SALHI , Enzo DAVAL , Fatma MOKRANI')
+
 
 
 
