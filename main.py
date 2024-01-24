@@ -35,9 +35,9 @@ st.title('Analyse des Données de Vols')
 
 # Choix de l'analyse à afficher
 analysis_option = st.sidebar.selectbox(
-    'Choisissez une analyse:',
+    'Choisir un théme:',
     ('Retards de Vol', 'Performance des Compagnies Aériennes',
-     'Trafic Aéroportuaire', 'Durée et Distance des Vols', 'Tendances Temporelles', 'Délais Spécifiques')
+     'Trafic Aéroportuaire', 'Durée et Distance des Vols', 'Tendances Temporelles', 'About')
 )
 
 # Analyse des Retards de Vol
@@ -113,9 +113,47 @@ elif analysis_option == 'Tendances Temporelles':
     st.pyplot(plt)
 
 
-# Délais Spécifiques
-elif analysis_option == 'Délais Spécifiques':
-    st.header('Analyse des Délais Spécifiques')
+# About 
+elif analysis_option == 'About':
+    st.header('Au sujet du projet')
+    st.subheader('Objectif', divider='rainbow')
+
+    st.markdown("""
+Ce projet manipule les données en utlisant la base de données mongoDB via Atlas , ce projet a pour objectif d'effectuer une analyse détaillée des différentes performances des compagnies aériennes : 
+- Quelles compagnies aériennes sont les plus ponctuelles ?
+- Quelles sont les principales causes de retards pour chaque compagnie ?
+- Quelles compagnies aériennes sont les plus ponctuelles ?
+- Combien de vols présentant des retards?
+- Quelles sont les principales causes de retards pour chaque compagnie ?
+- Quel est le nombre total de vols pour chaque aéroport d'origine ?
+- Quel est le nombre total de vols pour chaque aéroport de destination?
+- Quelle est la durée moyenne des vols, et quelle est la distance moyenne parcourue par les avions ?
+- Quel est le nombre de vols enregistrés chaque mois?
+                
+
+
+
+
+donc nous avons choisi la dataset "flights" qui contient des informations relatives aux vols, avec des colonnes décrivant divers aspects de chaque vol ainsi que le csv des compagnies.
+               
+        """)
+st.subheader('Dataset', divider='rainbow')
+st.markdown(""" Lien pour télécharger la dataset : 
+(https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input?select=flights.csv)
+               
+        """)
+
+st.subheader('Code source ', divider='rainbow')
+st.markdown(""" Github : 
+(https://github.com/fatma-ops/Projet-Pro-final-NoSQL-et-Big-Data-)
+               
+        """)
+
+st.caption('Mourad SALHI , Enzo DAVAL , Fatma MOKRANI')
+
+
+
+
 
 
 # Fermeture de la figure matplotlib
