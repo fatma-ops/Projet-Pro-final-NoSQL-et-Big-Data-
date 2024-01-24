@@ -4,11 +4,14 @@
 
 Ce projet manipule les données en utlisant la base de données mongoDB via Atlas , ce projet a pour objectif d'effectuer une analyse détaillée des différentes performances des compagnies aériennes : 
 - Quelles compagnies aériennes sont les plus ponctuelles ?
+- Combien de vols présentant des retards?
 - Quelles sont les principales causes de retards pour chaque compagnie ?
 - Quel est le nombre total de vols pour chaque aéroport d'origine ?
 - Quel est le nombre total de vols pour chaque aéroport de destination? 
 - Quelle est la durée moyenne des vols, et quelle est la distance moyenne parcourue par les avions ?
 - Quel est le nombre de vols enregistrés chaque mois?
+
+  
 donc nous avons choisi la dataset "flights" qui contient des informations relatives aux vols, avec des colonnes décrivant divers aspects de chaque vol ainsi que le csv des compagnies.
 
 # DATASET 
@@ -67,7 +70,11 @@ WEATHER_DELAY: Retard dû aux conditions météorologiques.
 
 
 
-# Guide pour utliser le script 
+## Technologies Utilisées
+- Base de données : [Cloud de MongoDB => Atlas]
+- Langage de Programmation : [Python]
+- Frameworks Web : [Streamlit]
+
 
 
 
