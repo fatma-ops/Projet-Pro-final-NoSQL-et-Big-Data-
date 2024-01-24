@@ -5,12 +5,19 @@ import matplotlib.pyplot as plt
 from pymongo import MongoClient
 
 # Charger les données
-client = MongoClient(
-    "mongodb+srv://batman:jesuisbatman@bdd-cours-mongo.qbpym7c.mongodb.net/?retryWrites=true&w=majority")
-cursor = client['IPSSI']['Flights']
-data = cursor.find().limit(10000)
 
-df = pd.DataFrame(data)
+
+@st.cache_data
+def load_data():
+    client = MongoClient(
+        "mongodb+srv://batman:jesuisbatman@bdd-cours-mongo.qbpym7c.mongodb.net/?retryWrites=true&w=majority")
+    cursor = client['IPSSI']['Flights']
+    data = cursor.find().limit(10000)
+    df = pd.DataFrame(data)
+    return df
+
+
+df = load_data()
 
 
 def plot_histogram(data, title, x_label, y_label='Nombre de Vols'):
