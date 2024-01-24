@@ -72,8 +72,8 @@ elif analysis_option == 'Trafic Aéroportuaire':
     # Nombre de vols par aéroport d'origine
     flights_by_origin = df['ORIGIN_AIRPORT'].value_counts().reset_index()
     flights_by_origin.columns = ['ORIGIN_AIRPORT', 'NUMBER_OF_FLIGHTS']
-    plot_bar_chart(flights_by_origin.head(20), 'ORIGIN_AIRPORT',
-                   'NUMBER_OF_FLIGHTS', 'Top 20 des Aéroports d\'Origine par Nombre de Vols')
+    plot_bar_chart(flights_by_origin.head(14), 'ORIGIN_AIRPORT',
+                   'NUMBER_OF_FLIGHTS', 'Top 14 des Aéroports d\'Origine par Nombre de Vols')
     st.pyplot(plt)
 
     # Nombre de vols par aéroport de destination
@@ -81,8 +81,8 @@ elif analysis_option == 'Trafic Aéroportuaire':
     ).reset_index()
     flights_by_destination.columns = [
         'DESTINATION_AIRPORT', 'NUMBER_OF_FLIGHTS']
-    plot_bar_chart(flights_by_destination.head(20), 'DESTINATION_AIRPORT',
-                   'NUMBER_OF_FLIGHTS', 'Top 20 des Aéroports de Destination par Nombre de Vols')
+    plot_bar_chart(flights_by_destination.head(14), 'DESTINATION_AIRPORT',
+                   'NUMBER_OF_FLIGHTS', 'Top 14 des Aéroports de Destination par Nombre de Vols')
     st.pyplot(plt)
 
 # Durée et Distance des Vols
