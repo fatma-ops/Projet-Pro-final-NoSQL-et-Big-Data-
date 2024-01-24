@@ -28,8 +28,8 @@ https://www.kaggle.com/code/fabiendaniel/predicting-flight-delays-tutorial/input
   
 - On supprime Les colonnes suivantes ( 'TAXI_OUT', 'WHEELS_OFF', 'WHEELS_ON', 'TAXI_IN', 'DAY_OF_WEEK', 'SECURITY_DELAY', 'WEATHER_DELAY'.) car elles contiennent des informations non essentielles pour notre analyse et des données manquantes qui pourraient compromettre la précision de nos résultats.
   
-- on fustionne les colonnes YEAR , MONTH et DAY dans la colonne DATES
-- 
+- on fustionne les colonnes YEAR , MONTH et DAY dans la colonne DATES.
+- Enfin on insert les données dans la base de données avec insert_many.
 
 
 
